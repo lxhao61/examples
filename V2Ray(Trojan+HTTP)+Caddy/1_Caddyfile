@@ -1,6 +1,6 @@
 {
 	order reverse_proxy before route
-	admin off
+	admin off #禁用 admin API。（选配）
 	persist_config off
 	log {
 		output file /var/log/caddy/error.log #错误日志的文件地址
