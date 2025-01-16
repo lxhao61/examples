@@ -1,6 +1,6 @@
 {
   "admin": {
-    "disabled": true,
+    "disabled": true, //禁用 admin API。（选配）
     "config": {
       "persist": false
     }
