@@ -3,7 +3,7 @@
 2. 实现了 Xray 示例（与 mKCP 关联的应用除外）的 SNI 分流连接、回落/分流连接启用了 PROXY protocol 支持。
 3. 实现了 V2Ray/Xray 与 Caddy 的示例使用 UDS（Unix Domain Socket） 连接时采用 abstract 模式，不需考虑 UDS 路径及监听进程的访问权限。
 4. 实现了 Xray 与 Nginx 的示例使用 UDS（Unix Domain Socket） 连接时（回落/分流连接除外）采用附加访问权限形式，简单高效地解决了监听进程的访问权限。
-5. 实现了 Caddy 的 SNI 分流不仅可共用 TCP 443 端口，还可共用 UDP 443 端口（含定向 UDP 转发）。
+5. 实现了 Caddy 的 SNI 分流不仅可共用 TCP 443 端口，还可共用 UDP 443 端口（见 Hysteria 应用）。
 6. 实现了由 Caddy 提供 TLS 证书的示例，其证书申请、更新及重载更新证书都可全自动化。
 7. 实现了 Caddy 的 NaiveProxy 除了支持 HTTPS 协议连接外，还同时支持 QUIC 协议连接，即支持 HTTP/3 传输。
 8. 实现了反代 Xray 的 XHTTP 应用除了支持 HTTP/2 传输外，还同时支持 HTTP/3 传输。
